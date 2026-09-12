@@ -15,16 +15,10 @@ function App() {
         <ImpactStats />
     </section>
     <section>
-        <Statistics />
-    </section>
-    <section>
         <WhyChooseUs />
     </section>
     <section>
         <HowItWorks />
-    </section>
-    <section>
-        <Courses />
     </section>
     <section>
         <Pricing />
