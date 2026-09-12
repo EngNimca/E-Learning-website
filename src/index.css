@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* roboto and montserrat */
+@import "tailwindcss";
+
+
+
+@theme {
+    --color-primary: #152A25;
+    --color-secondary: #BDE953;
+
+    --color-heading: #152A25;
+    --color-body: #6D6D6D;
+
+    --font-roboto: "Roboto", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--font-montserrat);
+    /* color: var(--color-body); */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-roboto);
+    /* color: var(--color-heading); */
+}
+
+@layer components {
+    .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+}
+
+@layer utilities {
+    
+    .padding {
+        @apply sm:px-16 px-8 sm:py-24 py-12;
+    }
+    .padding-x{
+        @apply sm:px-16 px-8;
+    }
+    .padding-y{
+        @apply sm:py-24 py-12;
+    }
+    .padding-l{
+        @apply sm:pl-16 pl-8;
+    }
+    .padding-r{
+        @apply sm:pr-16 pr-8;
+    }
+    .padding-t {
+        @apply sm:pt-28 pt-22;
+    }
+    .padding-b{
+        @apply sm:pb-24 pb-12;
+    }
+}
