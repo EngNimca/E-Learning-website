@@ -1,5 +1,5 @@
-import { Hero, Blog, Courses, Testimonials, 
-    FAQ, HowItWorks, Pricing, Statistics, 
+import { Hero, Blog,  Testimonials, 
+    FAQ, HowItWorks, Pricing,  
     WhyChooseUs, CTA, Footer } from './Sections'
 import Nav from "./components/Nav"
 import ImpactStats from "./Sections/ImpactStats";

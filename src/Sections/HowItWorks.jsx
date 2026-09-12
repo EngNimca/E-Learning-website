@@ -30,7 +30,7 @@ function HowItWorks() {
   <section className="bg-primary ">
     <div className="max-container padding-x py-12 sm:py-16 lg:py-20 grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
       {/* left side */}
-      <div className=" relative min-h-[470px] flex max-w-xl flex-col">
+      <div className=" relative lg:min-h-[470px] flex max-w-xl flex-col">
 
         {/* Label */}
         <Button
@@ -56,7 +56,7 @@ function HowItWorks() {
             
 
             {/* Image */}
-          <div className="absolute left-0 top-[50%] sm:left-[20%] sm:top-[53%] m  w-full max-w-[400px] ">
+          <div className=" w-full max-w-[400px] mt-8 lg:absolute lg:left-[20%] lg:top-[53%] lg:mt-0  ">
               <img
                 src={Student1}
                 alt="Student learning"
@@ -65,8 +65,9 @@ function HowItWorks() {
             </div> 
      </div>
 
+      
       {/* right side */}
-      <div className="flex flex-col gap-4 md:mt-10">
+      <div className="flex flex-col gap-4  md:mt-10">
         {
           steps.map((step)=>
           <HowItWorksSteps 
