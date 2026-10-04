@@ -30,7 +30,7 @@ function Blog() {
   ];
 
   return (
-    <section className="bg-white">
+    <section id="blog" className="bg-white scroll-mt-28">
 
       <div className="max-container padding-x py-12 sm:py-16 lg:py-20">
 

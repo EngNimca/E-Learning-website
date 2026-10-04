@@ -11,7 +11,7 @@ function StatItem({value, suffix, title, description}) {
         {title}
       </h4>
 
-      <p className="mt-1 max-w-[150px] text-[10px] leading-4 text-body sm:text-xs sm:leading-5">
+      <p className="mt-1 max-w-[150px] text-[10px] leading-4 text-body sm:text-xs sm:leading-5 xl:max-w-[180px]">
         {description}
       </p>
     </div>

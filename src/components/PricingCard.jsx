@@ -4,6 +4,7 @@ import {Check} from "lucide-react"
 function PricingCard({ title,
   description,
   price,
+  period = "/Month",
   features,
   featured = false,}) {
   return <>
@@ -43,7 +44,7 @@ function PricingCard({ title,
             featured ? "text-secondary" : "text-body"
           }`}
         >
-          /Month
+          {period}
         </span>
       </div>
 

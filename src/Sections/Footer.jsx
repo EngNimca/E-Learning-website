@@ -13,11 +13,23 @@ const socialLinks = [
 const footerColumns = [
   {
     title: "Quick Links",
-    links: ["Home", "Courses", "About Us", "Pricing", "Blog"],
+    links: [
+      { label: "Home", href: "#home" },
+      { label: "Courses", href: "#courses" },
+      { label: "About Us", href: "#about" },
+      { label: "Pricing", href: "#pricing" },
+      { label: "Blog", href: "#blog" },
+    ],
   },
   {
     title: "Support",
-    links: ["Help Center", "Contact Us", "Terms of Service", "Privacy Policy", "Refund Policy"],
+    links: [
+      { label: "Help Center", href: "#faq" },
+      { label: "Contact Us", href: "#get-started" },
+      { label: "Terms of Service", href: "#" },
+      { label: "Privacy Policy", href: "#" },
+      { label: "Refund Policy", href: "#" },
+    ],
   },
 ];
 

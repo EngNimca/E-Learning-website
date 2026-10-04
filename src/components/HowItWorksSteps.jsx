@@ -11,7 +11,7 @@ function HowItWorksSteps({number, title, description}) {
         <h3 className="font-roboto text-base font-bold text-white sm:text-lg ">
             {title}
         </h3>
-        <p className="mt-1 text-xs leadingn-5 text-white/60 sm:text-sm">
+        <p className="mt-1 text-xs leading-5 text-white/60 sm:text-sm">
             {description}
         </p>
     </div>

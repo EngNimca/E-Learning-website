@@ -7,6 +7,7 @@ const Button = ({
   iconPosition = "left",
   iconOnly = false,
   className = "",
+  href,
   ...props
 }) => {
   const baseStyles =
@@ -56,15 +57,26 @@ const Button = ({
     ${className}
   `;
 
+  const content = (
+    <>
+      {!iconOnly && icon && iconPosition === "left" && icon}
+      {!iconOnly && children}
+      {!iconOnly && icon && iconPosition === "right" && icon}
+      {iconOnly && icon}
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} className={buttonClasses} {...props}>
+        {content}
+      </a>
+    );
+  }
+
   return (
     <button className={buttonClasses} {...props}>
-      {!iconOnly && icon && iconPosition === "left" && icon}
-
-      {!iconOnly && children}
-
-      {!iconOnly && icon && iconPosition === "right" && icon}
-
-      {iconOnly && icon}
+      {content}
     </button>
   );
 };

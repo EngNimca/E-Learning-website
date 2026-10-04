@@ -27,10 +27,10 @@ function HowItWorks() {
     },
   ];
   return <>
-  <section className="bg-primary ">
-    <div className="max-container padding-x py-12 sm:py-16 lg:py-20 grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+  <section id="courses" className="bg-primary scroll-mt-28">
+    <div className="max-container padding-x py-12 sm:py-16 lg:py-20 grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-10 xl:gap-14">
       {/* left side */}
-      <div className=" relative lg:min-h-[470px] flex max-w-xl flex-col">
+      <div className="flex w-full flex-col">
 
         {/* Label */}
         <Button
@@ -50,24 +50,24 @@ function HowItWorks() {
             {/* Description */}
              
             <p className="mt-5 max-w-md text-sm leading-6 text-white/70 sm:text-base ">
-              Get started in just a few minutes <br /> and begin your learning
-              journey <br /> with ease.
+              Get started in just a few minutes and begin your learning
+              journey with ease.
             </p>
             
 
             {/* Image */}
-          <div className=" w-full max-w-[400px] mt-8 lg:absolute lg:left-[20%] lg:top-[53%] lg:mt-0  ">
+          <div className="mt-8 w-full max-w-[380px] sm:max-w-[420px] lg:mt-10 lg:ml-4 xl:ml-8">
               <img
                 src={Student1}
                 alt="Student learning"
-                className="w-full rounded-2xl object-cover "
+                className="aspect-[4/3] w-full rounded-2xl object-cover "
               />
             </div> 
      </div>
 
       
       {/* right side */}
-      <div className="flex flex-col gap-4  md:mt-10">
+      <div className="flex w-full flex-col gap-4 lg:pt-2">
         {
           steps.map((step)=>
           <HowItWorksSteps 

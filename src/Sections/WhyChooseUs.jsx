@@ -28,7 +28,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section className="bg-white">
+    <section id="about" className="bg-white scroll-mt-28">
       <div className="max-container padding-x py-12 sm:py-16 lg:py-20">
 
         {/* Heading */}
@@ -45,7 +45,7 @@ function WhyChooseUs() {
         </div>
 
         {/* Feature Cards */}
-        <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 cursor-pointer">
+        <div className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-none cursor-pointer">
           {features.map((feature) => (
             <FeatureCard
               key={feature.title}

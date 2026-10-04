@@ -32,7 +32,7 @@ function ImpactStats() {
   return  <>
       <section className="bg-primary/3">
         <div className="max-container padding-x py-6 sm:py-8 lg:py-7"> 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:items-start lg:gap-5">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:items-start lg:gap-6 xl:gap-8">
             {/* section title */}
             <div>
                 <h2 className="font-roboto text-xl font-bold leading-tight text-primary sm:text-2xl"> 

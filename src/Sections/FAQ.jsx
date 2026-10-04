@@ -35,7 +35,7 @@ function FAQ() {
     setOpenIndex(index === openIndex ? null : index)
   }
   return <>
-      <section className='bg-white'>
+      <section id="faq" className='bg-white scroll-mt-28'>
         <div className="max-container flex flex-col items-center padding-x py-10 sm:py-14 lg:py-16 ">
           <div className="mx-auto max-w-2xl text-center">
           <h1 className='font-roboto text-2xl font-bold text-primary sm:text-3xl'>
@@ -43,7 +43,7 @@ function FAQ() {
             </div>
 
           {/* FAQs items*/}
-          <div className='max-auto mt-7 flex w-full max-w-3xl font-roboto flex-col gap-2 sm:mt-8'>
+          <div className='mx-auto mt-7 flex w-full max-w-3xl font-roboto flex-col gap-2 sm:mt-8'>
             {
               faqs.map((faqs, index)=>
               <FAQItem

@@ -17,44 +17,84 @@
     --font-montserrat: "Montserrat", sans-serif;
 }
 
+html {
+    scroll-padding-top: 6rem;
+}
+
 body {
     font-family: var(--font-montserrat);
-    /* color: var(--color-body); */
+    width: 100%;
+    overflow-x: clip;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-roboto);
-    /* color: var(--color-heading); */
+}
+
+#root,
+main {
+    width: 100%;
 }
 
 @layer components {
     .max-container {
-    max-width: 1440px;
-    margin: 0 auto;
+        width: 100%;
+        max-width: 1440px;
+        margin-inline: auto;
     }
 }
 
 @layer utilities {
     
     .padding {
-        @apply sm:px-16 px-8 sm:py-24 py-12;
+        @apply px-6 py-12 sm:px-10 sm:py-20 lg:px-14 lg:py-24 xl:px-16;
     }
     .padding-x{
-        @apply sm:px-16 px-8;
+        @apply px-6 sm:px-10 lg:px-14 xl:px-16;
     }
     .padding-y{
-        @apply sm:py-24 py-12;
+        @apply py-12 sm:py-20 lg:py-24;
     }
     .padding-l{
-        @apply sm:pl-16 pl-8;
+        @apply pl-6 sm:pl-10 lg:pl-14 xl:pl-16;
     }
     .padding-r{
-        @apply sm:pr-16 pr-8;
+        @apply pr-6 sm:pr-10 lg:pr-14 xl:pr-16;
     }
     .padding-t {
-        @apply sm:pt-28 pt-22;
+        @apply pt-20 sm:pt-24 lg:pt-28;
     }
     .padding-b{
-        @apply sm:pb-24 pb-12;
+        @apply pb-12 sm:pb-20 lg:pb-24;
+    }
+
+    .animate-slide-next {
+        animation: slide-next 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .animate-slide-prev {
+        animation: slide-prev 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+}
+
+@keyframes slide-next {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-prev {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
